@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="movil.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="jquery.fancybox.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+  <script src="wow.min.js"></script>
+  <script src="jquery.tinycarousel.js"></script>
+  <script src="jquery.tinycarousel.min.js"></script>
+    <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+  <script src="jquery.fancybox.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+    new WOW().init();
+    </script>
+  <link rel="stylesheet" href="jquery.fancybox.css">
+    <script src="https://kit.fontawesome.com/e932d8f123.js"crossorigin="anonymous"></script>
+    <script src="jquery.fancybox.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="modal" class="wow animate__animated animate__jackInTheBox contenedortrans">
+        <div class="formulario">
+            <i id="cerrar_btn" class="fa-solid fa-rectangle-xmark fa-2x"></i>
+            <header class="contact">
+                <h1>Contact Us</h1>
+                <br>
+            </header>
+            <form class="casilla">
+                <input type="text" placeholder="Name*" required>
+                <br>
+                <br>
+                <input type="text" placeholder="Email*" required>
+                <br>
+                <br>
+                <textarea name="" placeholder="Message*" id="" cols="35" rows="3"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit" id="boo">
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="menu oculto2">
+          <div class="menu2">
+            <div id="icon6">
+              <a href="#"><i class="fas fa-bars fa-3x"></i></a>
+              <div class="opciones" id="navm">
+            <a href="index.html" id="home">HOME</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="equipo.html">NUESTRO EQUIPO</a>
+            <a href="contacto.html">CONTACTANOS</a>
+          </div>
+            </div>
+          </div>
+          <figure>
+            <img src="imagenes/logo.png" alt="">
+          </figure>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>      
+      </header> 
+      <header class="ancho oculto">
+        <div class="menu">
+            <figure><img src="imagenes/logo.png" alt=""></figure>
+            <nav>
+        
+                <a href="index.html">HOME</a>
+                <a href="servicios.html">SERVICIOS</a>
+                <a href="equipo.html">NUESTRO EQUIPO</a>
+                <a href="contacto.html">CONTACTANOS</a>
+            </nav>
+            
+      <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+    <section class="wow animate__animated animate__fadeInUp ancho contacto">
+        <section>
+            <i class="fa-regular fa-map"></i>
+            <h1>ADDRES</h1>
+            <p>652 Main Road, Apt 12
+                New York, USA 10033</p>
+        </section>
+        <section>
+            <i class="fa-solid fa-gift"></i>
+            <h1 id="bo">GET IN TOUCH WITH US</h1>
+            <a href="#" id="btn">CONTACT US</a>
+        </section>
+        <section>
+            <i class="fa-solid fa-phone-volume"></i>
+            <h1>PHONE & EMAIL</h1>
+            <p>+61 3 8376 6284
+                info@demolink.org</p>
+        </section>
+    </section>
+    <section class="wow animate__animated animate__fadeInUp contacto2 ancho">
+        <article>
+            <div class="acordeon">
+                <div id="titulo1" class="parrafo">
+                    <h3 id="Texto">Find Us</h3>
+                </div>
+                <div id="contenido1" >
+                    <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields,
+                        forums, image galleries in HTML versions of Flash products</p>
+                </div>
+            </div>
+        </article>
+        <article class="servi">
+            <h2>ABOUT</h2>
+            <p>Who We Are</p>
+            <p>Services</p>
+            <p>Pricing</p>
+            <p>Out Team</p>
+            <p>Blog</p>
+        </article>
+        <article>
+            <h2>NEWSLETTER</h2>
+            <form>
+                <div class="input-container2">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="text" placeholder="Enter your email" required>
+                 </div>
+            <input type="submit" id="buttton">
+        </form>
+        </article>
+    </section>
+    <footer class="wow animate__animated animate__fadeInUp ancho" >
+        <div><figure><img src="imagenes/logo.png" alt=""></figure></div>
+        <div><p>#1 plumbing services provider</p></div>
+        <div class="icon">
+            <i class="fa-brands fa-facebook-f face"></i>
+            <i class="fa-brands fa-google goo"></i>
+            <i class="fa-brands fa-twitter tw"></i>
+            <i class="fa-brands fa-pinterest-p pin"></i>
+        </div>
+        <div>
+            <p> © 2023. All Rights Reserved. Privacy Policy</p>
+        </div>
+      </footer>
+    <script>
+        var fondomodal = document.getElementById("modal");
+        var btn = document.getElementById("btn");
+        var cerrar = document.getElementById("cerrar_btn");
+
+        function tiempo(){
+        fondomodal.style.display = "flex";
+        }
+
+        btn.onclick = function() {
+        fondomodal.style.display = "flex";
+        };
+        cerrar.onclick = function() {
+        fondomodal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+        if (event.target == fondomodal){
+        fondomodal.style.display = "none";
+        }
+        };
+</script>
+<script>
+    $("#titulo1").click(function () {
+$("#contenido1").slideToggle();
+});
+var heading = document.getElementById("Texto");
+var isClicked = false;
+heading.addEventListener("click", function () {
+if (!isClicked) {
+
+heading.classList.add("clicked");
+isClicked = true;
+} else {
+
+heading.classList.remove("clicked");
+isClicked = false;
+}
+});
+</script>             
+<script>
+    $("#icon6").click(function () {
+      $("#navm").slideToggle();
+    });
+  </script>
+</body>
+</html>
